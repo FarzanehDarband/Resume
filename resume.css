@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "custom font";
+    src: url("../fonts/icomoon");
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-dark:#222222;
+    --primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+    
+}
+body{
+    background-color: var(--background-dark);
+}
+header{
+    width: 100%;
+    height: 130vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url("images/ximage_1.jpg.pagespeed.ic.X2zR0KHyU5.webp");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: var(--primary-font);
+}
+li{
+    display: inline-block;
+    padding-left: 60px;
+    font-size: 15px;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.bio{
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    text-align: center;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bio  h1 {
+    font-weight: normal;
+    font-size: 50px;
+    display: inline;
+}
+.bio  p{
+    text-transform: uppercase;
+}
+.featured-portfolio{
+    width: 100%;
+    height: 150vh;
+    background-color: var(--background-dark);
+}
+.featured-portfolio  p{
+    color: whitesmoke;
+    display: inline;
+    position: relative;
+    top: 5%;
+    left: 43%;
+    font-size: 30px;
+    transform: translate(-100%,-50%);
+
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 80%;
+    height: 150vh;
+    position: relative;
+    top:100px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+.portfolio{
+    width: 30%;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+.portfolio  img{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.portfolio  img:hover{
+    box-shadow: 5px 5px 20px 5px whitesmoke , -10px -10px 30px 10px whitesmoke;
+}
+.portfolio p:nth-child(2){
+    width: 100px;
+     position: absolute;
+    top: 110%;
+    left: 70%;
+    font-size: 20px;
+    color: whitesmoke;
+
+}
+.portfolio  p:nth-child(3){
+    position: absolute;
+    top: 125%;
+    left: 60%;
+    font-size: 14px;
+    color: #555555
+
+    
+    
+}
+.about-me{
+    background-color: var(--background-dark);
+    max-width: 80%;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    left: 10%;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    
+}
+.about-me  .mardak-photo{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 70PX;
+    left: 40PX;
+    background-image: url("images/ximage_1.jpg.pagespeed.ic.X2zR0KHyU5.webp");
+    background-size: cover;
+    background-position: center; 
+}
+.mardak-photo .click1{
+    width: 100px;
+    height:30px;
+    text-align: center;
+    background-color: #808000;
+    border-radius: 25px;
+    position: absolute;
+    top: 70%;
+    left: 130%;
+}
+.mardak-photo .click1:hover{
+    background-color: #bdbd2b;
+    cursor: pointer;
+}
+.mardak-photo .click2{
+    width: 110px;
+    height:30px;
+    text-align: center;
+    background-color: #808000;
+    border-radius: 25px;
+    position: absolute;
+    top: 70%;
+    left: 155%;
+}
+.mardak-photo .click2:hover{
+    background-color: #bdbd2b;
+    cursor: pointer;
+}
+.about-me  .text{
+    width: 30%;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+}
+.about-me  .text h2{
+    color: whitesmoke;
+}
+.about-me  .text p{
+    color: #555555;
+}
+@media (max-width: 700px){
+    .portfolio p:nth-child(2){
+         position: absolute;
+        top: 110%;
+        left: 85%;
+    }
+    .portfolio  p:nth-child(3){
+        position: absolute;
+        top: 135%;
+        left: 65%;
+    }
+    .mardak-photo .click1{
+        position: absolute;
+        top: 110%;
+        left: 20px;
+    }
+    .mardak-photo .click2{
+        position: absolute;
+        top: 125%;
+        left: 20px;
+    }
+}
